@@ -38,6 +38,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Email</th>
+            <th>Action</th>
         </thead>
 
         <tbody>
@@ -49,6 +50,7 @@
                     <td><?php echo $user['name'] ?></td>
                     <td><?php echo $user['username'] ?></td>
                     <td><?php echo $user['email'] ?></td>
+                    <td><a href="delete.php?id=<?php echo $user['id'] ?>">Delete</a>
                 </tr>
             <?php
             }
