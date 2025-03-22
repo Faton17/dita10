@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php include_once 'header.php'; ?>
 
-<style>
-    table,
-    td,
-    th{
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-
-    td, th{
-        padding:10px 20px;
-    }
-    </style>
-</head>
-
-
-<body>
     <?php
     include_once 'config.php';
 
@@ -29,17 +8,24 @@
     $getUsers->execute();
 
     $users = $getUsers->fetchAll();
+
+    foreach ($users as $user) {
+
+    }
     ?>
+    <div class="d-flex" style="height: 100vh;">
+        <div class="d-flex-column flex-shrink-0 p-3 text-white bg-dark" syle="width: 280px;">
+    </div>
 
-
-    <table>
-        <thead>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Action</th>
-        </thead>
+    <div class="p-5">
+        <table class="mb-5 table table-borderd">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Action</th>
+            </thead>
 
         <tbody>
             <?php
@@ -58,7 +44,4 @@
         </tbody>
         </table>
 
-    
-    
-    </body>
-</html>
+        <?php include_once 'footer.php'; ?>

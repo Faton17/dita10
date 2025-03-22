@@ -3,7 +3,7 @@
 $user = "root";
 $pass = "";
 $server ="localhost";
-$dbname = "dita 7";
+$dbname = "db1";
 
 try{
 
